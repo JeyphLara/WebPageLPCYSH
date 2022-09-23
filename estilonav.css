@@ -5,7 +5,15 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+nav{
+    background-color:#ffffff;
+    display:inline-block;
+    transform:translatex(0px) translatey(0px);
+   }
+   nav ul a{
+    color:#000000 !important;
+   }
+   
 nav{
     background: #ffffff;
     height: 80px;

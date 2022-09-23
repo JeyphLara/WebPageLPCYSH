@@ -31,6 +31,10 @@ li{
     text-decoration: none;
 
 }
+
+#latest figure .imgover{
+    min-height:262px;
+   }
 .menu li a:hover{
     color: rgb(84, 38, 16);
     transition: all .3s;
