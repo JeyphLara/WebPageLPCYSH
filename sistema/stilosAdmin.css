@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  rgb(117, 105, 250);
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+.navegacion{
+  text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    background: #ffff;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu >li{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding: 20px 20px;
+}
+.menu >li>a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(66, 64, 63);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+
+}
+.menu li a:hover{
+    color: blueviolet;
+    transition: all .3s;
+
+}
+.submenus{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+.submenus li a{
+display: block;
+padding: 15px;
+color: #fff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: none;
+}
+.menu li:hover .submenus{
+visibility: visible;
+opacity: 1;
+}
+.menu #cerrar_session{
+    text-align: end;
+    padding: 1px 1px;
+    color: rgb(241, 18, 18);
+    width: 20%;
+   font-size: 17px;
+   background: rgba(84, 3, 60, 0.08);
+   margin-bottom: 0;
+   border-bottom: 20px;
+   border-radius: 50px;
+}
+#General{
+    display: none;
+    background: rgb(252, 3, 3);
+    width: 100%;
+ padding-right: 20px;
+}

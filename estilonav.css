@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #aaaaaa;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    left: 0;
+}
+.logo{
+    height:50px;
+        left:70px;
+        top:-4px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active, li a:hover{
+    background: #6e6ee8;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(20vh - 80px);
+}
+
+.img-header nav .enlace{
+    height:78px;
+    left:99px;
+   }
+   
+   
+

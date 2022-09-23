@@ -1,0 +1,185 @@
+<script>
+    
+function validateForm() {
+    var x = document.forms["from_pre-registro"]["nombres"].value; //[nombre del formulario], [variable del input]
+    //Pais
+    if (x == "" || x == null) {//si es vasio o nullo
+        alert("El nombre debe ser específicado.");
+        return false;
+    }
+
+
+    var x = document.forms["from_pre-registro"]["apellidos"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("El apellido debe ser específicado.");
+        return false;
+    }
+
+    var x = document.forms["from_pre-registro"]["ndocumento"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("El numero de documento debe ser específicado.");
+        return false;
+    }
+
+    var x = document.forms["from_pre-registro"]["correo"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("El correo debe ser específicada.");
+        return false;
+    }
+
+    var x = document.forms["from_pre-registro"]["edad"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("La edad debe ser específicada.");
+        return false;
+    }
+    var x = document.forms["from_pre-registro"]["celular"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("La numero telefonico debe ser específicado.");
+        return false;
+    }
+    var x = document.forms["from_pre-registro"]["fechaIngreso"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("La fecha de hoy debe ser específicado.");
+        return false;
+    }
+    var x = document.forms["from_pre-registro"]["tdocumento"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("Debe específicar el tipo de documento");
+        return false;
+    }
+    var x = document.forms["from_pre-registro"]["sexo"].value;
+    //Pais
+    if (x == "" || x == null) {
+        alert("Debe específicar el sexo");
+        return false;
+    }
+
+
+}
+</script>
+<!Doctype html>
+
+<style>
+    input[type=text]:focus {
+        background-color: lightblue;
+        /* Establecer fondo en campo seleccionado para escribir*/
+    }
+
+    input[type=number]:focus {
+        background-color: lightblue;
+        /* Establecer fondo en campo seleccionado para escribir*/
+    }
+
+    input[type=date]:focus {
+        background-color: lightblue;
+        /* Establecer fondo en campo seleccionado para escribir*/
+    }
+
+    #formulario {
+        background-color: rgba(182, 238, 219, 0.05);
+        margin: 0;
+    }
+
+    #image {
+        text-align: center;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.01),
+                rgba(0, 0, 0, 0.01)
+                /*este linear-gradient me pone un fondo oscuro en la imagen de fondo*/
+
+            )
+    }
+
+    #final {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        /* Define un contenedor para incluir todos los elementos. */
+        border-radius: 5px;
+        background-color: #da3c15;
+        padding: 20px;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pre-registro</title>
+    <link rel="stylesheet" href="preinscripcion.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+   
+    <div class="todo">
+        <section class="formulario">
+            <div class="contaier">
+                <!-- formulario-->
+                <FORM name="from_pre-registro" action="indexPre-registro.php" method="post" onsubmit="return validateForm()">
+
+                    <h2>Porfavor ingrese todos los datos correspondientes para el pre registro...</h2>
+                    <p>
+                        <LABEL for="nombres">Nombres </LABEL>
+                        <INPUT class="Campos" type="text" name="nombres"><BR>
+
+
+                        <LABEL for="apellidos">Apellidos </LABEL>
+                        <INPUT class="Campos" type="text" name="apellidos"><BR>
+
+
+                        <label for="">Tipo de docummento</label>
+                        <input class="" type="radio" name="tdocumento" value="a"><spam style="color:rgb(242, 140, 140)">TI</spam>
+                        <input class="" type="radio" name="tdocumento" value="i"><spam style="color:rgb(242, 140, 140)">CC</spam><BR><br>
+
+                        <LABEL for="ndocumento">Numero de documento </LABEL>
+                        <INPUT class="Campos" type="number" name="ndocumento"><BR>
+                        <LABEL for="correo">Correo electronico </LABEL>
+                        <INPUT class="Campos" type="text" name="correo"><BR>
+
+                        <LABEL for="edad">Edad </LABEL>
+                        <INPUT class="Campos" type="number" name="edad"><BR>
+                        <label for="">Sexo</label>
+                        <input class="" type="radio" name="sexo" value="a"><spam style="color:rgb(242, 140, 140)">Masculino</spam>
+                        <input class="" type="radio" name="sexo" value="i"><spam style="color:rgb(242, 140, 140)">Femenino</spam><BR><br>
+                        <LABEL for="celular">Celular </LABEL>
+                        <INPUT class="Campos" type="number" name="celular"><BR>
+
+                        <label for="emails">Ciudad?</label>
+                        <input type="text" multiple name="ciudades" id="ciudades" list="drawdciudades" required size="45">
+                            
+                            <datalist id="drawciudades">
+                              <option value="Cali"></option>
+                              <option value="Tumaco"></option>
+                              <option value="Quibdó"></option>
+                              <option value="Buenaventura"></option>
+                              <option value="Otro"></option>
+                            </datalist><BR><br>
+
+                        <LABEL for="fechaIngreso">Fecha del ingreso </LABEL>
+                        <INPUT class="Campos" type="date" name="fechaIngreso"><BR>
+
+
+                        <input class="botons" type="submit" value="Enviar" /> <br><br>
+                        <INPUT class="botons" type="reset">
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section id="final">
+            <p>&copy; Laboratorio de paz 2022</p>
+
+        </section>
+    </div>
+</body>
+
+</html>
