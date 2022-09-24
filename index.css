@@ -1052,10 +1052,12 @@ header a:hover {
    
     /* Videog */
     #videog{
+        position: relative;
      width:586px;
+     top:30%;
     }
-    
-   }
+
+}
 
    *{
     padding: 0;
