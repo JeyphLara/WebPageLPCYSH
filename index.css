@@ -721,9 +721,9 @@ header a:hover {
     .content-derechos_deveres ul{
         text-align: justify;
         margin: auto;
-    max-width: 70%;
-    
+        max-width: 70%;
         padding: 1.5px;
+        display: block;
     }
     .content-derechos_deveres h2{
         text-align: center;
@@ -740,10 +740,11 @@ header a:hover {
         border-radius: 5px;
 
     }
- 
+    #videos img{
+        display: none;
+    }
 
     #videop{
-     
         padding: 1px 0px;
         display: block;
     }
@@ -1220,7 +1221,7 @@ nav .checkbtn i{
    /* Videos */
    #videos{
     height:481px;
-    padding-top:200px;
+    padding-top:70px;
    }
    
    /* Button */
